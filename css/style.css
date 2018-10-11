@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Krub');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+header, footer {
+    color: white;
+    background: #4b2e83;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0; 
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+#top {
+    width: 100%;
+    text-align: center;
+    padding: 6em;
+}
+
+#footer {
+    padding: 2em;
+    text-align: center;
+}
+
+button {
+    font-family: 'Krub', sans-serif;
+}
+
+section {
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+    font-size: 3vw;
+}
+
+#header {
+    display: flex;
+    align-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.picture-container {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#profile {
+    opacity: 0;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+
+}
+
+hr {
+    width: 25%;
+    color: #85754d;
+}
+
+main {
+    text-align: left;
+}
+
+.content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro {
+    flex: 1.5;
+    text-align: center;
+    padding: 2em;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.title {
+    margin: 2em;
+}
+
+.big-box {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#project-one {
+    background-color: #e8e3d3;
+}
+
+#project-two {
+    background-color: #85754d;
+}
+
+#project-three {
+    background-color: #d9d9d9;
+}
+
+#contact {
+    text-align: center;
+}
+
+.boxes {
+    font-weight: bold;
+    box-sizing: border-box;
+    height: 10em;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+div.boxes:hover {
+    border: 5px solid black;
+}
+
+.big-box a {
+    color: black;
+    text-decoration: none;
+}
+
+.big-box p {
+    margin: 0;
+    padding: 1em;
+}
+
+header {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.word {
+    opacity: 0;
+}
+
+#about-hello p {
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+    #about, #projects {
+        flex-direction: row;
+    }
+
+}
+
