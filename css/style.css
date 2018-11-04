@@ -31,11 +31,27 @@ h4 {
 #top {
     width: 100%;
     text-align: center;
-    padding: 6em;
+    padding: 2rem;
+    z-index: 99;
 }
 
 #footer {
     padding: 2em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.project-info {
+    color: white;    
+    text-align: center;
+    font-size: .7em;
+    display:inline-block;
+    width: 10rem;
+    padding: .5em;
+    height: auto;
+}
+
+.big-box a {
     text-align: center;
 }
 
@@ -51,8 +67,13 @@ section {
 
 h1 {
     text-align: center;
+    display: inline-block;
     margin: 1em;
-    font-size: 3vw;
+    border-radius: 75%;
+    padding: 1em;
+    font-size: 6vw;
+    background-color: rgba(75, 46, 131, .8);
+    z-index: 999;
 }
 
 #header {
@@ -60,7 +81,7 @@ h1 {
     align-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
 }
 
 .picture-container {
@@ -72,7 +93,7 @@ h1 {
 
 #profile {
     opacity: 0;
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
@@ -89,7 +110,7 @@ main {
 }
 
 .content {
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -114,7 +135,8 @@ main {
 .big-box {
     color: white;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #project-one {
@@ -125,8 +147,20 @@ main {
     background-color: #85754d;
 }
 
+.project-card {
+    border: 5px solid transparent;
+}
+
 #project-three {
     background-color: #d9d9d9;
+}
+
+#project-four {
+    background-color: #d9d9d9;
+}
+
+#project-five {
+    background-color: #e8e3d3;
 }
 
 #contact {
@@ -135,20 +169,20 @@ main {
 
 .boxes {
     font-weight: bold;
-    box-sizing: border-box;
     height: 10em;
     width: 10em;
     display: flex;
     align-items: center;
     text-align: center;
 }
-
-div.boxes:hover {
-    border: 5px solid black;
+.big-box a:hover {
+    border-color: black;
 }
+
 
 .big-box a {
     color: black;
+    background-color: #4b2e83;
     text-decoration: none;
 }
 
@@ -167,6 +201,7 @@ header {
 
 .word {
     opacity: 0;
+    font-size: .8em;
 }
 
 #about-hello p {
@@ -179,9 +214,102 @@ header {
     justify-content: space-around;
 }
 
-@media (min-width: 768px) {
+
+.card-size {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+address {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-container {
+    height: 2.5rem;
+    background-color: #D2B48C; 
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+address a:hover {
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover, #about-me a:hover {
+    color: #D2B48C;
+}
+
+div.contact-container:hover {
+    border: 3px solid black;
+}
+
+#software-dev {
+    margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+    #profile {
+        width: 30%;
+    }
+
+    a.rounded {
+        margin: 1rem;
+    }
+
+    #me {
+        font-size: 4vw;
+    }
+
+    .word {
+        font-size: 1.0em;
+    }
+
+}
+
+
+@media (min-width: 900px) {
     #about, #projects {
         flex-direction: row;
+    }
+
+    #projects {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #profile {
+        width: 60%;
+    }
+
+    address {
+        width: 50%;
+    }
+
+    #software-dev {
+        margin-top: 0em;
+    }
+
+    #me {
+        font-size: 3vw;
+    }
+
+    .contact-container {
+        width: 4rem;
+        height: 4rem;
     }
 
 }
