@@ -119,6 +119,7 @@ main {
     flex: 1.5;
     text-align: center;
     padding: 2em;
+    font-size: 1em;
 }
 
 #about {
@@ -202,7 +203,7 @@ header {
 .word {
     opacity: 0;
     font-size: .8em;
-}
+}    
 
 #about-hello p {
     text-align: center;
