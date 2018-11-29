@@ -4,6 +4,10 @@ html {
     scroll-behavior: smooth;
 }
 
+span {
+    text-decoration: underline;
+}
+
 body {
     font-family: 'Krub', sans-serif;
 }
@@ -65,6 +69,10 @@ section {
     padding-bottom: 2em;
 }
 
+a.rounded {
+    margin-top: .5rem;
+}
+
 h1 {
     text-align: center;
     display: inline-block;
@@ -119,7 +127,7 @@ main {
     flex: 1.5;
     text-align: center;
     padding: 2em;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 #about {
@@ -156,14 +164,6 @@ main {
     background-color: #d9d9d9;
 }
 
-#project-four {
-    background-color: #d9d9d9;
-}
-
-#project-five {
-    background-color: #e8e3d3;
-}
-
 #contact {
     text-align: center;
 }
@@ -176,6 +176,7 @@ main {
     align-items: center;
     text-align: center;
 }
+
 .big-box a:hover {
     border-color: black;
 }
@@ -215,6 +216,10 @@ header {
     justify-content: space-around;
 }
 
+#my-projects {
+    padding-left: 0;
+    padding-right: 0;   
+}
 
 .card-size {
     width: 60%;
@@ -266,8 +271,12 @@ div.contact-container:hover {
         width: 30%;
     }
 
+    #intro {
+        font-size: 1em;
+    }
+    
     a.rounded {
-        margin: 1rem;
+        margin: .5rem;
     }
 
     #me {
@@ -282,12 +291,21 @@ div.contact-container:hover {
 
 
 @media (min-width: 900px) {
-    #about, #projects {
+    #about {
         flex-direction: row;
     }
 
     #projects {
-        width: 80%;
+        justify-content: center;
+    }
+
+    #projects > div {
+        flex: 1;
+        margin-top: 2em; 
+    }
+
+    #projects {
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
