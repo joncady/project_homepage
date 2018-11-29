@@ -8,6 +8,23 @@ span {
     text-decoration: underline;
 }
 
+#logo-space {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+}
+
+#logo-space img {
+    height: 70px;
+    width: auto;
+    margin: .5em;
+}
+
 body {
     font-family: 'Krub', sans-serif;
 }
@@ -267,6 +284,15 @@ div.contact-container:hover {
 }
 
 @media (min-width: 600px) {
+    
+    #logo-space img {
+        margin: 1em;
+    }
+
+    #logo-space {
+        width: 70%;
+    }
+
     #profile {
         width: 30%;
     }
@@ -285,6 +311,10 @@ div.contact-container:hover {
 
     .word {
         font-size: 1.0em;
+    }
+
+    #logo-space img {
+        height: 70px;
     }
 
 }
