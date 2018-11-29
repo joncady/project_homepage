@@ -12,6 +12,11 @@
         $('#reset').click(resetAll);
         $('h2').animate({ opacity: 1}, 2000);
         $('img').animate({ opacity: 1}, 2000);
+        $('.navbar-nav').find('a').on('click', function(e){
+            if ($(window).width() < 767) {
+                $('.navbar-toggler').trigger('click');
+            }
+        });
         let word = " I'm Jonathan Cady";
         index = 0;
         timer = setInterval(function() {

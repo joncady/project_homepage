@@ -83,8 +83,14 @@ button {
 section {
     padding: 1em;
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
+
+
+#about-me {
+    padding-bottom: 0;
+}
+
 
 a.rounded {
     margin-top: .5rem;
@@ -211,6 +217,7 @@ main {
 }
 
 header {
+    margin-top: 3em;
     position: relative;
 }
 
@@ -250,6 +257,11 @@ address {
     margin-right: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+#more {
+    margin-top: 2em;
 }
 
 .contact-container {
@@ -265,6 +277,23 @@ address {
 
 address a:hover {
     text-decoration: none;
+}
+
+.media {
+    flex-direction: column;
+    font-size: .8em;
+} 
+
+.media img {
+    width: 30%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+}
+
+#written {
+    display: none;
 }
 
 footer a {
@@ -285,6 +314,33 @@ div.contact-container:hover {
 
 @media (min-width: 600px) {
     
+    #email {
+        display: none;
+    }
+
+    #written span {
+        text-decoration: none;
+    }
+
+    #written {
+        color: white;
+        border-radius: 30px;
+        display: inline-block;
+        background-color: #D2B48C; 
+        padding: .7em 1em .7em 1em;
+    }
+
+    #more {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .media {
+        font-size: 1em;
+        align-items: center;
+    }   
+
     #logo-space img {
         margin: 1em;
     }
@@ -321,8 +377,22 @@ div.contact-container:hover {
 
 
 @media (min-width: 900px) {
+    
+    #written {
+        padding: 1.2em;
+    }
+
     #about {
         flex-direction: row;
+    }
+
+    .media {
+        flex-direction: row;
+    }
+
+    .media img {
+        width: 20%;
+        margin-right: 2em;
     }
 
     #projects {
