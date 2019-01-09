@@ -60,15 +60,22 @@
             </div>
         </div>
     </header>
-    <button id="reset" class="btn">reset hellos</button>
-    <button id="hello-button" class="btn" type="button" data-toggle="collapse" data-target="#about-hello" aria-expanded="false"
-        aria-controls="about-hello">about hellos</button>
     <div id="about-hello" class="collapse mt-3">
         <p class="card card-body card-size">
             I designed the "hello" module to say hello in a variety of languages.
             I am interested in languages and I try to find ways to
             pair my love for coding and language!
         </p>
+    </div>
+    <div class="dropdown show">
+        <a class="btn btn-dark-outline dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <button class="dropdown-item" id="reset">reset</button>
+            <button id="hello-button" class="dropdown-item" data-toggle="collapse" data-target="#about-hello"
+                aria-expanded="false" aria-controls="about-hello">about hellos</button>
+        </div>
     </div>
     <main>
         <div class="content">
@@ -107,7 +114,7 @@
                 <h2>Skills</h2>
                 <hr>
                 <div id="logo-space">
-                    <a href="https://reactjs.org/"><img src="./css/skill_logos/1200px-React-icon.svg.png" alt="React"></a>
+                    <a href="https://reactjs.org/"><img src="./css/skill_logos/react.png" alt="React"></a>
                     <a href="https://firebase.google.com"><img src="./css/skill_logos/firebase.png" alt="Firebase"></a>
                     <a href="https://en.wikipedia.org/wiki/SQL"><img src="./css/skill_logos/sql.png"></a>
                     <a href="https://nodejs.org"><img src="./css/skill_logos/node.png" alt="Node"></a>
@@ -173,6 +180,15 @@
                                 <div class="project-info">I <em>collorated</em> with a team during a hackathon to
                                     create an emotional support chat bot that has user authentication</div>
                             </a>
+                            <a class="rounded project-card" href="https://students.washington.edu/joncady/cv/">
+                                <div class="boxes rounded" id="project-two">
+                                    <p>Basic CV Example (JavaScript, Node, Express)</p>
+                                </div>
+                                <div class="project-info">I <em>connected</em> my simple front-end, which sends a
+                                    photo,
+                                    and my Express back-end, which forwards it to a Microsoft Vision API
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div id="software-dev">
@@ -208,7 +224,7 @@
                             </a>
                         </div>
                     </div>
-                    <div id="software-dev">
+                    <div id="mobile-dev">
                         <h3>Mobile Development</h3>
                         <div class="big-box">
                             <a class="rounded project-card" href="https://github.com/joncady/monitoodApp">
@@ -254,7 +270,19 @@
                             </div>
                         </li>
                         <li class="media">
-                            <img src="./css/skill_logos/1200px-React-icon.svg.png" alt="React">
+                            <img src="./css/pi.jpeg" alt="React">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Internet of Things</h5>
+                                I've recently been fascinated with Internet of Things (IoT) technology! Small devices
+                                such as Raspberry Pis, or Arduinos can do really cool things. My favorite trick I've 
+                                done so far is setting up a server on my Raspberry Pi and having the Pi speak by using 
+                                text-to-speech (from a HTTP request). Paired with Node, an Arduino can also become a smart
+                                device! Using Node modules that have been written to interact with an Arduino, you can set
+                                up your own wifi-enabled devices. I hope to showcase some of projects with IoT here as well!
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="./css/skill_logos/react.png" alt="React">
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">React Development - My Future!</h5>
                                 React is one of my new-found passions! I recently learned the basics in my courses and
